@@ -1,0 +1,23 @@
+h1{
+ color: lightblue;
+ text-align: center;
+ padding-top: 30px;
+ }
+
+nav{
+  color: black;
+}
+nav ul{
+  float: right;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  text-decoration: none;
+}
+
+nav a{
+  text-transform: uppercase;
+}

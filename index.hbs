@@ -1,0 +1,32 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+
+<html>
+<header class="site-header outer {{#if @blog.cover_image}}" style="url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
+    <div class="inner">
+    <div class="site-header-content">
+  <img src="https://simplyfying.com/static/media/Simplyfying350.0ee88c04.png" width="300px">
+
+</header>
+
+<body>
+
+<h1>We Blog.</h1>
+
+ <nav>
+  <ul>
+   <li><a href="Product updates.html">Product updates</a></li>
+    <li><a href="Our clients.html">Clients list</a></li>
+  </ul>
+</nav>
+
+<a href="https://simplyfying.com/about" target="_blank">visit out website</a>
+
+
+</body>
+
+
+</html>
