@@ -1,23 +1,27 @@
 h1{
- color: lightblue;
+ color: #7F7483;
  text-align: center;
- padding-top: 30px;
+ font-family: Open Sans,sans-serif;
+ position: relative;
+ bottom: -2em;
+ font-weight: normal;
+
  }
 
-nav{
-  color: black;
-}
-nav ul{
-  float: right;
-  list-style: none;
+h3{
+  color: #FFCD00;
+  padding-left:110px;
+  position: relative;
+  bottom: -22.5px;
+  font-family: Open Sans,sans-serif;
+  font-size: 3em;
+
 }
 
-nav li{
-  display: inline-block;
-  margin-left: 70px;
-  text-decoration: none;
-}
+.img{
+  text-align: left;
+  position: relative;
+  top: -19em;
 
-nav a{
-  text-transform: uppercase;
+
 }

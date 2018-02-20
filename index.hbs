@@ -5,25 +5,46 @@ into the {body} of the default.hbs template --}}
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
 
 <html>
-<header class="site-header outer {{#if @blog.cover_image}}" style="url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
-    <div class="inner">
+<header class="site-header outer {{#if @blog.cover_image}}{{else}}no-cover{{/if}}">
+
     <div class="site-header-content">
-  <img src="https://simplyfying.com/static/media/Simplyfying350.0ee88c04.png" width="300px">
+
+      <h1>We,</h1>
+
+      <h3>Blog.</h3>
+
+<div class="img">
+<img src="assets/img_logo.png"/>
+</div>
 
 </header>
 
-<body>
-
-<h1>We Blog.</h1>
-
- <nav>
-  <ul>
-   <li><a href="Product updates.html">Product updates</a></li>
-    <li><a href="Our clients.html">Clients list</a></li>
-  </ul>
+<nav>
+ <ul>
+  <li><a href="Tech.com">Technology</a></li>
+   <li><a href="SEO.com">SEO</a></li>
+   <li><a href="Branding.com">Branding</a></li>
+   <li><a href="Web performance.com">Web Performance</a></li>
+ </ul>
 </nav>
 
-<a href="https://simplyfying.com/about" target="_blank">visit out website</a>
+
+<body>
+
+  {{!-- The main content area --}}
+  <main id="site-main" class="site-main outer" role="main">
+      <div class="inner">
+
+          <div class="post-feed">
+              {{#foreach posts}}
+
+                  {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                  {{> "post-card"}}
+
+              {{/foreach}}
+          </div>
+
+      </div>
 
 
 </body>

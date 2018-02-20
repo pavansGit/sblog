@@ -26,7 +26,17 @@
         {{{body}}}
 
         {{!-- The footer at the very bottom of the screen --}}
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="http://simplyfying.com">simplyfying</a> &copy; {{date format="YYYY"}}</section>
+                <nav class="site-footer-nav">
 
+
+                    {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
+                    <a href="https://twitter.com/simplyfying" target="_blank" rel="noopener">simplyfying twitter</a>
+                </nav>
+            </div>
+        </footer>
 
     </div>
 
